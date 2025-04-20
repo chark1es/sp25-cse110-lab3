@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="icon" href="favicon.ico" >
+        <title>Meeting Notes</title>
+    </head>
+    <body>
+        <header>
+            <h1>Blackjack Game Project Planning</h1>
+            <h2>Meeting Type: <i>Warmup Meeting</i></h2>
+            <h2>Date: April 13, 2024</h2>
+            <p>
+                Meeting duration: <span>30 minutes</span><br>
+                Location: <b>CSE Basement</b>
+            </p>
+            <details>
+                <summary>Meeting Quick Info</summary>
+                <p>Project: Blackjack Game Development</p>
+                <p>Initial Planning</p>
+                <p>Meeting Lead: Charles and Prasham</p>
+                <p>Note Taker: Charles</p>
+            </details>
+        </header>
+
+        <nav>
+            <h2>Meeting Contents</h2>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished">Pending Items</a></li>
+                <li><a href="#new">New Business</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#meeting-feedback">Meeting Feedback</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="meeting-summary">
+                <p>
+                    This meeting focused on the initial planning for the
+                    <strong>Blackjack Game (Warmup)</strong> project.
+                </p>
+                <p>
+                    We discussed the ideas for the project and the roles for
+                    each team member. We also made sure to set up a new
+                    workspace for the team.
+                </p>
+            </div>
+
+            <hr>
+
+            <section id="attendance">
+                <h2>Attendance</h2>
+                <p>
+                    Total attendees:
+                    <strong>All team members (In person and Virtual)</strong>
+                </p>
+                <ul>
+                    <li>
+                        <strong>Charles Nguyen</strong> -
+                        <i>Project Coordinator</i>
+                    </li>
+                    <li>
+                        <strong>Prasham</strong> - <i>Planning Coordinator</i>
+                    </li>
+                    <li><strong>Team Members</strong> - <i>Developers</i></li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="agenda">
+                <h2>Agenda</h2>
+                <p>Key discussion points:</p>
+                <ol>
+                    <li>Game selection for the assignment</li>
+                    <li>Team communication setup</li>
+                    <li>Role assignments</li>
+                    <li>Project planning document</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <section id="unfinished">
+                <h2>Pending Items</h2>
+                <p>Items to be completed:</p>
+                <ul>
+                    <li>
+                        <em>Urgent:</em> Slack workspace setup and invitations
+                    </li>
+                    <li>Role assignment document completion</li>
+                </ul>
+                <details>
+                    <summary>Upcoming Deliverables</summary>
+                    <p>Expected completion: End of day Monday (April 14th)</p>
+                    <ul>
+                        <li>Detailed role assignments</li>
+                        <li>Project guidelines</li>
+                        <li>Task outlines</li>
+                    </ul>
+                </details>
+            </section>
+
+            <hr>
+
+            <section id="new">
+                <h2>New Business</h2>
+                <div class="priority-items">
+                    <p><strong>Key Decisions</strong> made:</p>
+                    <ul>
+                        <li>
+                            Selected Blackjack as the project game -
+                            <em>Majority decision</em>
+                        </li>
+                        <li>Creation of dedicated Slack workspace</li>
+                        <li>Role assignment document in progress</li>
+                        <li>Team organization structure</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="media">
+                <h2>Media</h2>
+                <h3>Sample Media Elements</h3>
+                <div class="media-content">
+                    <img src="./screenshots/screenshot.png" alt="Placeholder Image">
+                    <audio controls>
+                        <source src="https://s3.amazonaws.com/citizen-dj-assets.labs.loc.gov/audio/items/loc-fma/fma-164754.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <video controls width="250">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <hr>
+        </main>
+
+        <form id="meeting-feedback">
+            <h2>Meeting Feedback Form</h2>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required >
+                </p>
+                <p>
+                    <label for="department">Department:</label>
+                    <input
+                        type="text"
+                        id="department"
+                        name="department"
+                        list="departments"
+                    >
+                    <datalist id="departments">
+                        <option value="Engineering"></option>
+                        <option value="Design"></option>
+                        <option value="Product"></option>
+                        <option value="QA"></option>
+                        <option value="Management"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="feedback-date">Feedback Date:</label>
+                    <input
+                        type="date"
+                        id="feedback-date"
+                        name="feedback-date"
+                    >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Meeting Effectiveness</legend>
+                <p>How would you rate this meeting?</p>
+                <p>
+                    <input
+                        type="radio"
+                        id="excellent"
+                        name="rating"
+                        value="excellent"
+                    >
+                    <label for="excellent">Excellent</label><br>
+                    <input type="radio" id="good" name="rating" value="good" >
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="fair" name="rating" value="fair" >
+                    <label for="fair">Fair</label><br>
+                    <input type="radio" id="poor" name="rating" value="poor" >
+                    <label for="poor">Poor</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Meeting Outcomes</legend>
+                <p>Select all that apply:</p>
+                <p>
+                    <input
+                        type="checkbox"
+                        id="clear-objectives"
+                        name="outcomes"
+                        value="clear-objectives"
+                    >
+                    <label for="clear-objectives">Objectives were clear</label
+                    ><br>
+                    <input
+                        type="checkbox"
+                        id="good-participation"
+                        name="outcomes"
+                        value="good-participation"
+                    >
+                    <label for="good-participation"
+                        >Good participation from attendees</label
+                    ><br>
+                    <input
+                        type="checkbox"
+                        id="action-items"
+                        name="outcomes"
+                        value="action-items"
+                    >
+                    <label for="action-items"
+                        >Clear action items established</label
+                    ><br>
+                    <input
+                        type="checkbox"
+                        id="time-managed"
+                        name="outcomes"
+                        value="time-managed"
+                    >
+                    <label for="time-managed"
+                        >Time was managed effectively</label
+                    >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Follow-up Preference</legend>
+                <p>
+                    <label for="follow-up">Preferred follow-up method:</label>
+                    <select id="follow-up" name="follow-up">
+                        <option value="">--Please choose an option--</option>
+                        <option value="email">Email</option>
+                        <option value="slack">Slack</option>
+                        <option value="meeting">Follow-up Meeting</option>
+                        <option value="call">Phone Call</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <p>
+                    <label for="comments"
+                        >Please provide any additional feedback:</label
+                    ><br>
+                    <textarea
+                        id="comments"
+                        name="comments"
+                        rows="4"
+                        cols="50"
+                        placeholder="Enter your comments here..."
+                    ></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit Feedback</button>
+                <button type="reset">Clear Form</button>
+            </p>
+        </form>
+
+        <footer>
+            <p>
+                Meeting notes recorded on
+                <span>April 13, 2024</span>
+            </p>
+            <p>
+                Role assignment document release: <span>April 14, 2024</span
+                ><br>
+                For questions, contact the team leads
+            </p>
+        </footer>
+    </body>
+</html>
