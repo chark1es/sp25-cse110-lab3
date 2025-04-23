@@ -5,44 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <link rel="icon" href="favicon.ico" >
         <title>Meeting Notes</title>
+        <link rel="stylesheet" href="styles/global.css">
+        <style>
+            body {
+                background-color: #f0f0f0;
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <h1>Blackjack Game Project Planning</h1>
+        <header class="bg-secondary">
+            <h1 style="color: red; border: 2px solid blue;">Blackjack Game Project Planning</h1>
             <h2>Meeting Type: <i>Warmup Meeting</i></h2>
             <h2>Date: April 13, 2024</h2>
             <p>
-                Meeting duration: <span>30 minutes</span><br>
-                Location: <b>CSE Basement</b>
+                Meeting duration: <span class="color-rgb">30 minutes</span><br>
+                Location: <b class="color-hex">CSE Basement</b>
             </p>
             <details>
                 <summary>Meeting Quick Info</summary>
-                <p>Project: Blackjack Game Development</p>
+                <p>Project: <span class="color-rgba">Blackjack Game Development</span></p>
                 <p>Initial Planning</p>
-                <p>Meeting Lead: Charles and Prasham</p>
-                <p>Note Taker: Charles</p>
+                <p>Meeting Lead: <span class="color-hsl">Charles and Prasham</span></p>
+                <p>Note Taker: <span class="color-name">Charles</span></p>
             </details>
         </header>
 
-        <nav>
-            <h2>Meeting Contents</h2>
+        <nav class="position-sticky">
+            <h2 class="text-align">Meeting Contents</h2>
             <ul>
-                <li><a href="#attendance">Attendance</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#unfinished">Pending Items</a></li>
-                <li><a href="#new">New Business</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#meeting-feedback">Meeting Feedback</a></li>
+                <li><a href="#attendance" class="button">Attendance</a></li>
+                <li><a href="#agenda" class="button">Agenda</a></li>
+                <li><a href="#unfinished" class="button">Pending Items</a></li>
+                <li><a href="#new" class="button">New Business</a></li>
+                <li><a href="#media" class="button">Media</a></li>
+                <li><a href="#meeting-feedback" class="button">Meeting Feedback</a></li>
             </ul>
         </nav>
 
         <main>
-            <div class="meeting-summary">
-                <p>
+            <div class="meeting-summary nested-parent">
+                <p class="nested-child">
                     This meeting focused on the initial planning for the
                     <strong>Blackjack Game (Warmup)</strong> project.
                 </p>
-                <p>
+                <p class="nested-child">
                     We discussed the ideas for the project and the roles for
                     each team member. We also made sure to set up a new
                     workspace for the team.
@@ -51,7 +57,7 @@
 
             <hr>
 
-            <section id="attendance">
+            <section id="attendance" class="unit-relative-1">
                 <h2>Attendance</h2>
                 <p>
                     Total attendees:
@@ -71,7 +77,7 @@
 
             <hr>
 
-            <section id="agenda">
+            <section id="agenda" class="unit-relative-2">
                 <h2>Agenda</h2>
                 <p>Key discussion points:</p>
                 <ol>
@@ -84,11 +90,11 @@
 
             <hr>
 
-            <section id="unfinished">
+            <section id="unfinished" class="unit-relative-3">
                 <h2>Pending Items</h2>
                 <p>Items to be completed:</p>
                 <ul>
-                    <li>
+                    <li class="text-decoration">
                         <em>Urgent:</em> Slack workspace setup and invitations
                     </li>
                     <li>Role assignment document completion</li>
@@ -106,12 +112,12 @@
 
             <hr>
 
-            <section id="new">
+            <section id="new" class="border-short">
                 <h2>New Business</h2>
-                <div class="priority-items">
-                    <p><strong>Key Decisions</strong> made:</p>
+                <div class="priority-items border-long">
+                    <p class="var-fallback"><strong>Key Decisions</strong> made:</p>
                     <ul>
-                        <li>
+                        <li class="text-color">
                             Selected Blackjack as the project game -
                             <em>Majority decision</em>
                         </li>
@@ -124,16 +130,16 @@
 
             <hr>
 
-            <section id="media">
+            <section id="media" data-demo="true">
                 <h2>Media</h2>
                 <h3>Sample Media Elements</h3>
-                <div class="media-content">
-                    <img src="./screenshots/screenshot.png" alt="Placeholder Image">
-                    <audio controls>
+                <div class="media-content flex-container">
+                    <img src="./screenshots/screenshot.png" alt="Placeholder Image" class="flex-item">
+                    <audio controls class="flex-item">
                         <source src="https://s3.amazonaws.com/citizen-dj-assets.labs.loc.gov/audio/items/loc-fma/fma-164754.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <video controls width="250">
+                    <video controls width="250" class="flex-item">
                         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -143,14 +149,14 @@
             <hr>
         </main>
 
-        <form id="meeting-feedback">
+        <form id="meeting-feedback" class="margin-auto">
             <h2>Meeting Feedback Form</h2>
 
-            <fieldset>
+            <fieldset class="margin-short">
                 <legend>Personal Information</legend>
                 <p>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required >
+                    <input type="text" id="name" name="name" required class="position-static">
                 </p>
                 <p>
                     <label for="department">Department:</label>
@@ -159,6 +165,7 @@
                         id="department"
                         name="department"
                         list="departments"
+                        class="position-relative"
                     >
                     <datalist id="departments">
                         <option value="Engineering"></option>
@@ -174,11 +181,12 @@
                         type="date"
                         id="feedback-date"
                         name="feedback-date"
+                        class="unit-absolute-1"
                     >
                 </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="padding-short">
                 <legend>Meeting Effectiveness</legend>
                 <p>How would you rate this meeting?</p>
                 <p>
@@ -188,17 +196,17 @@
                         name="rating"
                         value="excellent"
                     >
-                    <label for="excellent">Excellent</label><br>
+                    <label for="excellent" class="display-inline">Excellent</label><br>
                     <input type="radio" id="good" name="rating" value="good" >
-                    <label for="good">Good</label><br>
+                    <label for="good" class="display-inline-block">Good</label><br>
                     <input type="radio" id="fair" name="rating" value="fair" >
-                    <label for="fair">Fair</label><br>
+                    <label for="fair" class="display-block">Fair</label><br>
                     <input type="radio" id="poor" name="rating" value="poor" >
                     <label for="poor">Poor</label>
                 </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="sizing-example">
                 <legend>Meeting Outcomes</legend>
                 <p>Select all that apply:</p>
                 <p>
@@ -240,7 +248,7 @@
                 </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="unit-absolute-2">
                 <legend>Follow-up Preference</legend>
                 <p>
                     <label for="follow-up">Preferred follow-up method:</label>
@@ -254,9 +262,9 @@
                 </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="grid-container">
                 <legend>Additional Comments</legend>
-                <p>
+                <p class="grid-item">
                     <label for="comments"
                         >Please provide any additional feedback:</label
                     ><br>
@@ -266,26 +274,35 @@
                         rows="4"
                         cols="50"
                         placeholder="Enter your comments here..."
+                        class="font-google"
                     ></textarea>
                 </p>
             </fieldset>
 
-            <p>
-                <button type="submit">Submit Feedback</button>
+            <p class="margin-long">
+                <button type="submit" class="primary">Submit Feedback</button>
                 <button type="reset">Clear Form</button>
             </p>
         </form>
 
-        <footer>
+        <footer id="id-example" class="class-example">
             <p>
                 Meeting notes recorded on
-                <span>April 13, 2024</span>
+                <span class="color-mix">April 13, 2024</span>
             </p>
-            <p>
-                Role assignment document release: <span>April 14, 2024</span
+            <p class="padding-long">
+                Role assignment document release: <span class="color-wide-gamut">April 14, 2024</span
                 ><br>
                 For questions, contact the team leads
             </p>
         </footer>
+
+        <div class="position-fixed display-none bg-primary unit-absolute-3">
+            This is a fixed position element (hidden with display: none)
+        </div>
+
+        <div class="position-absolute">
+            Wooo
+        </div>
     </body>
 </html>
